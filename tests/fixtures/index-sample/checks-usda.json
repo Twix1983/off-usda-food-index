@@ -1,0 +1,9 @@
+{
+  "barcodes": [],
+  "queries": [
+    {"q": "banana", "expect": "(?i)^banana", "within": 3},
+    {"q": "chicken breast", "expect": "(?i)chicken,? breast", "within": 3},
+    {"q": "egg", "expect": "(?i)^egg", "within": 5},
+    {"q": "brocoli", "expect": "(?i)broccoli", "within": 5}
+  ]
+}

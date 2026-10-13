@@ -1,0 +1,21 @@
+{
+  "name": "off-usda-food-index",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Builds a Typesense search index of US foods from Open Food Facts and USDA FoodData Central: the mapping, quality filters, USDA cross-check and import pipeline.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "food-index": "tsx scripts/food-index/run.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.0",
+    "vitest": "^5.0.1"
+  }
+}

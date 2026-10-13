@@ -1,0 +1,15 @@
+{
+  "barcodes": [
+    {"code": "0888849000005", "kcal100": [250, 400]},
+    {"code": "0030000010204", "kcal100": [330, 420]},
+    {"code": "0016000275287", "kcal100": [330, 420]},
+    {"code": "0643843714927", "kcal100": [30, 80]},
+    {"code": "0032100026314", "kcal100": [320, 370], "crossCheck": true}
+  ],
+  "queries": [
+    {"q": "quest bar", "expect": "(?i)quest", "within": 3},
+    {"q": "cheerios", "expect": "(?i)cheerios", "within": 3},
+    {"q": "cheerois", "expect": "(?i)cheerios", "within": 5},
+    {"q": "greek yogurt", "expect": "(?i)greek|fage", "within": 5}
+  ]
+}
